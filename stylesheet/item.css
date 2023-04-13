@@ -1,0 +1,88 @@
+
+
+/* ------------------------- */
+
+
+/* ------------------------- */
+
+main section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+section h2 {
+  text-align: center;
+}
+.info {
+  /* padding: 0 2em; */
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main .principal article {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+main .principal img {
+  width: 100%;
+  max-width: 600px;
+}
+main .principal .info .cant {
+  display: flex;
+  align-items: center;
+}
+main .principal .info .cant input {
+  width: 100px;
+  padding: 1em 0;
+  margin-left: 1em;
+}
+main .principal .info .cant p {
+  font-size: var(--font-precio);
+  font-weight: var(--weight-lead);
+}
+main .principal .info span {
+  font-size: var(--font-llabel);
+  font-weight: var(--weight-llabel);
+}
+main .principal .info p {
+  font-size: var(--font-lead);
+  font-weight: var(--weight-lead);
+}
+
+/* ------------------------------------- */
+
+main .relacionados,
+.principal {
+  margin-top: 9em;
+}
+main .relacionados .relacionados-fila {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+main .relacionados img {
+  width: 90%;
+  max-width: 350px;
+}
+
+.relacionados .relacionados-fila .cont-img {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.relacionados .relacionados-fila .cont-img span {
+  padding: 0.6em 1em;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: var(--font-nuevo);
+  font-weight: var(--weight-llabel);
+  color: aliceblue;
+  background-color: #2ec5ce;
+}
+
+/* ------------------------------------- */

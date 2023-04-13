@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  :root {
+    --font-llabel: 1.6em;
+    --weight-llabel: 500;
+    --font-nuevo: 1.4em;
+  
+    --font-lead: 1.8em;
+    --weight-lead: 400;
+    --font-precio: 3.8em;
+  }
+  html {
+    font-size: 62.5%;
+    font-family: "Inter", sans-serif;
+  }
+  
+  header,
+  footer {
+    width: 100%;
+  }
+  h1,
+  h2,
+  h3 {
+    font-weight: 800;
+  }
+  h1 {
+    font-size: 7.2em;
+  }
+  h2 {
+    font-size: 4.8em;
+  }
+  h3 {
+    font-size: 4em;
+  }
+  h4 {
+    font-weight: 700;
+    font-size: 2.8em;
+  }
+  p {
+    font-weight: 400;
+    font-size: 1.8em;
+  }
+  nav p {
+    font-size: var(--font-nuevo);
+    font-weight: var(--weight-llabel);
+  }
+  button {
+    width: 11.5em;
+    padding: 1em 2em;
+    color: aliceblue;
+    background: #8c30f5;
+    border: none;
+    border-radius: 0.6em;
+  }
+  nav button {
+    background-color: #2ec5ce;
+  }
+  .container {
+    max-width: 1120px;
+    margin: 0 auto;
+  }
+  header nav ul {
+    list-style: none;
+    padding: 1.2em 0em;
+    display: flex;
+    justify-content: space-between;
+  }
+  header,
+  nav {
+    background-color: aliceblue;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.144));
+  }
+  header nav ul .nav-items {
+    display: flex;
+    align-items: center;
+  }
+  header nav ul .nav-items > * {
+    margin: 0 1.8em;
+  }
+
+
+
+  footer {
+    margin-top: 9em;
+    padding: 2em 0;
+    color: aliceblue;
+    background-color: #313131;
+    display: flex;
+    justify-content: center;
+  }
