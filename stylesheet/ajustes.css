@@ -47,17 +47,7 @@
     font-size: var(--font-nuevo);
     font-weight: var(--weight-llabel);
   }
-  button {
-    width: 11.5em;
-    padding: 1em 2em;
-    color: aliceblue;
-    background: #8c30f5;
-    border: none;
-    border-radius: 0.6em;
-  }
-  nav button {
-    background-color: #2ec5ce;
-  }
+
   .container {
     max-width: 1120px;
     margin: 0 auto;
