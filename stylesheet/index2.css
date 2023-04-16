@@ -1,16 +1,5 @@
-.hero a, button {
+.hero a {
   color: aliceblue;
-}
-button {
-  border: none;
-  border-radius: 0.6em;
-  font-weight: var(--weight-llabel);
-}
-nav button {
-  width: 100px;
-  height: 40px;
-  font-size: var(--font-nuevo);
-  background-color: #2ec5ce;
 }
 .hero button {
   width: 154px;
@@ -32,7 +21,7 @@ main .hero .hero-text {
   align-items: center;
   text-align: center;
 }
-main .hero .hero-text p{
+main .hero .hero-text p {
   margin: 1em 0 1.5em 0;
 }
 main .hero img {
@@ -40,10 +29,6 @@ main .hero img {
   width: 100%;
   max-width: 500px;
 }
-a {
-  text-decoration: none;
-}
-
 
 /* ---------------------------------------- */
 

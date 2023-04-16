@@ -4,23 +4,30 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./stylesheet/item.css" />
     <link rel="stylesheet" href="./stylesheet/ajustes.css" />
+    <link rel="stylesheet" href="./stylesheet/item.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/5b00e0e4a8.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Item First Mobile</title>
   </head>
   <body>
     <header>
       <nav>
-        <ul>
+        <div class="menu-burger" id="menu-burger">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <ul id="lista">
           <div class="nav-items">
             <li>
-              <a><p>Funkoshop</p></a>
+              <a href="index.html"><p>Funkoshop</p></a>
             </li>
           </div>
           <div class="nav-items">
@@ -105,5 +112,7 @@
     <footer>
       <p>All rights reserved 2023 - Funkoshop &copy;</p>
     </footer>
+    <script src="./menu.js"></script>
+
   </body>
 </html>

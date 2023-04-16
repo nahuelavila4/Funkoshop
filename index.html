@@ -22,10 +22,13 @@
   <body>
     <header>
       <nav>
-        <ul>
+        <div class="menu-burger" id="menu-burger">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <ul id="lista">
           <div class="nav-items">
             <li>
-              <a><p>Funkoshop</p></a>
+              <a href="index.html"><p>Funkoshop</p></a>
             </li>
           </div>
           <div class="nav-items">
@@ -53,9 +56,7 @@
         <div class="hero-text">
           <h3>FunkoShop</h3>
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-          <button>
-            <a href="item.html">Pedidos</a>
-          </button>
+          <a href="item.html"><button>Pedidos</button></a>
         </div>
         <div class="hero-cont-img">
           <img
@@ -124,5 +125,6 @@
     <footer>
       <p>All rights reserved 2023 - Funkoshop &copy;</p>
     </footer>
+    <script src="./menu.js"></script>
   </body>
 </html>
