@@ -43,6 +43,10 @@ p {
   font-weight: 400;
   font-size: 1.8em;
 }
+header{
+  position: fixed;
+  top: 0;
+}
 nav p {
   font-size: var(--font-nuevo);
   font-weight: var(--weight-llabel);
@@ -68,11 +72,12 @@ nav button {
   font-size: var(--font-nuevo);
   background-color: #2ec5ce;
 }
+ul{
+  list-style: none;
+}
 nav ul {
   background-color: aliceblue;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.144));
-  list-style: none;
-  padding: 1.2em 0em;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -94,6 +99,7 @@ nav .menu-burger {
   top: 2rem;
   right: 1.5rem;
   z-index: 1;
+  cursor: pointer;
 }
 nav ul .nav-items {
   display: flex;

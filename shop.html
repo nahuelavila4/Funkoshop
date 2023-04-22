@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./stylesheet/shop.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" href="data:;base64,=" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
@@ -35,7 +36,7 @@
               <a><p>Login</p></a>
             </li>
             <li>
-              <a><p>Shop</p></a>
+              <a href="shop.html"><p>Shop</p></a>
             </li>
             <li>
               <a><p>Nosotros</p></a>
@@ -50,13 +51,153 @@
         </ul>
       </nav>
     </header>
-    <main>
-      <section></section>
+    <main class="container">
+      <section class="filtros">
+        <div class="size">
+          <a class="menu-texto">Tamaño</a>
+          <ul class="filtrosmenu">
+            <li>Pequeño</li>
+            <li>Mediano</li>
+            <li>Grande</li>
+          </ul>
+        </div>
+        <div class="envio">
+          <a class="menu-texto">Envio</a>
+          <ul class="filtrosmenu">
+            <li>Llega hoy</li>
+            <li>Llega mañana</li>
+            <li>Llega esta semana</li>
+          </ul>
+        </div>
+        <div class="precio">
+          <a class="menu-texto">Precio</a>
+          <ul class="filtrosmenu">
+            <li><input type="number" placeholder="Desde" /></li>
+            <li><input type="number" placeholder="Hasta" /></li>
+          </ul>
+        </div>
+        <div class="condicion">
+          <a class="menu-texto">Condicion</a>
+          <ul class="filtrosmenu">
+            <li>Nuevo</li>
+            <li>Usado</li>
+          </ul>
+        </div>
+        <div class="rating">
+          <a class="menu-texto">Rating</a>
+          <ul class="filtrosmenu">
+            <li>De mas vendido a menos</li>
+            <li>De menos vendido a mas</li>
+          </ul>
+        </div>
+      </section>
+      <section class="productos">
+        <div class="productos-grid">
+          <article>
+            <div class="cont-img">
+              <img src="./img/harry-potter/harry-1.webp" alt="" />
+            </div>
+            <div class="info">
+              <div></div>
+              <h4>Harry Potter</h4>
+              <p>$ 1899,99</p>
+              <p>3 cuotas sin interes</p>
+            </div>
+          </article>
+          <article>
+            <div class="cont-img">
+              <img src="./img/harry-potter/snape-patronus-1.webp" alt="" />
+            </div>
+            <div class="info">
+              <div></div>
+              <h4>Snape Patronus</h4>
+              <p>$ 1899,99</p>
+              <p>3 cuotas sin interes</p>
+            </div>
+          </article>
+          <article>
+            <div class="cont-img">
+              <img src="./img/star-wars/luke-1.webp" alt="" />
+            </div>
+            <div class="info">
+              <div></div>
+              <h4>Luke</h4>
+              <p>$ 1899,99</p>
+              <p>3 cuotas sin interes</p>
+            </div>
+          </article>
+          <article>
+            <div class="cont-img">
+              <img src="./img/pokemon/vulpix-1.webp" alt="" />
+            </div>
+            <div class="info">
+              <div></div>
+              <h4>Vulpix</h4>
+              <p>$ 1899,99</p>
+              <p>3 cuotas sin interes</p>
+            </div>
+          </article>
+          <article>
+            <div class="cont-img">
+              <img src="./img/pokemon/charmander-1.webp" alt="" />
+            </div>
+            <div class="info">
+              <div></div>
+              <h4>Charmander</h4>
+              <p>$ 1899,99</p>
+              <p>3 cuotas sin interes</p>
+            </div>
+          </article>
+          <article>
+            <div class="cont-img">
+              <img src="./img/star-wars/trooper-1.webp" alt="" />
+            </div>
+            <div class="info">
+              <div></div>
+              <h4>Stormtrooper</h4>
+              <p>$ 1899,99</p>
+              <p>3 cuotas sin interes</p>
+            </div>
+          </article>
+          <article>
+            <div class="cont-img">
+              <img src="./img/harry-potter/luna-1.webp" alt="" />
+            </div>
+            <div class="info">
+              <div></div>
+              <h4>Luna Lovegood</h4>
+              <p>$ 1899,99</p>
+              <p>3 cuotas sin interes</p>
+            </div>
+          </article>
+          <article>
+            <div class="cont-img">
+              <img src="./img/pokemon/pikachu-1.webp" alt="" />
+            </div>
+            <div class="info">
+              <div></div>
+              <h4>Pikachu</h4>
+              <p>$ 1899,99</p>
+              <p>3 cuotas sin interes</p>
+            </div>
+          </article>
+          <article>
+            <div class="cont-img">
+              <img src="./img/star-wars/bobbafeth-1.webp" alt="" />
+            </div>
+            <div class="info">
+              <div></div>
+              <h4>Bobba Feth</h4>
+              <p>$ 1899,99</p>
+              <p>3 cuotas sin interes</p>
+            </div>
+          </article>
+        </div>
+      </section>
     </main>
     <footer>
       <p>All rights reserved 2023 - Funkoshop &copy;</p>
     </footer>
     <script src="./menu.js"></script>
-
   </body>
 </html>
