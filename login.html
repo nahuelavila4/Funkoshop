@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="stylesheet" href="./stylesheet/ajustes.css" />
+    <link rel="stylesheet" href="./stylesheet/ajustes-admin.css">
+    <link rel="stylesheet" href="./stylesheet/login.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
@@ -38,24 +40,21 @@
       </nav>
     </header>
     <main>
-        <section>
-            <h2>Ingresar a mi cuenta</h2>
-            <div class="datos">
-                <div class="email">
-                    <p>Email:</p>
-                    <input type="email" name="" id="">
-                </div>
-                <div class="pass">
-                    <p>Contraseña:</p>
-                    <input type="password" name="" id="">
-                </div>
-                <div class="ingresar">
-                    <button>Ingresar</button>
-                    <span><input type="checkbox">Recordarme</span>
-                </div>
-                <a href="">Olvide mi contraseña</a>
-            </div>
-        </section>
+      <section>
+        <h2>Ingresar a mi cuenta</h2>
+        <div class="datos">
+          <div class="datos-input">
+            <input type="email" name="" id="email" placeholder="Email" />
+            <input type="password" name="" id="pass" placeholder="Contraseña" />
+          </div>
+          <div class="ingresar">
+            <button>Ingresar</button>
+            <input type="checkbox" />
+            <label class="txt-peque">Recordarme</label>
+          </div>
+          <a href="" class="txt-peque">Olvide mi contraseña</a>
+        </div>
+      </section>
     </main>
     <footer>
       <p>All rights reserved 2023 - Funkoshop &copy;</p>

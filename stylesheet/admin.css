@@ -1,0 +1,32 @@
+th, td{
+    padding: 1em 0;
+}
+/* 
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.busqueda{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.lista .titulo{
+    display: flex;
+    justify-content: space-between;
+}
+ */
+ th{
+    text-align: left;
+ }
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+table tbody tr:nth-of-type(odd){
+    background-color: rgb(227, 229, 232);
+}

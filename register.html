@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="stylesheet" href="./stylesheet/ajustes.css" />
+    <link rel="stylesheet" href="./stylesheet/ajustes-admin.css" />
+    <link rel="stylesheet" href="./stylesheet/register.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
@@ -38,38 +40,25 @@
       </nav>
     </header>
     <main>
-        <section>
-            <div class="titulo">
-                <h2>Crea tu Cuenta</h2>
-                <p>Completa el Formulario</p>
-            </div>
-            <form class="datos" action="">
-                <div class="nombre">
-                    <p>Nombre:</p>
-                    <input type="text">
-                </div>
-                <div class="apellido">
-                    <p>Apellido:</p>
-                    <input type="text">
-                </div>
-                <div class="email">
-                    <p>Email:</p>
-                    <input type="email">
-                </div>
-                <div class="pass">
-                    <p>Contraseña:</p>
-                    <input type="password">
-                </div>
-                <div class="pass">
-                    <p>Repetir Contraseña:</p>
-                    <input type="password">
-                </div>
-                <div class="ingresar">
-                    <button>Registrarme</button>
-                    <span><input type="checkbox">Acepto Terminos y condiciones</span>
-                </div>
-            </form>
-        </section>
+      <section>
+        <div class="titulo">
+          <h2>Crea tu Cuenta</h2>
+          <p>Completa el Formulario</p>
+        </div>
+        <form class="datos" action="">
+          <div class="datos-input">
+            <input type="text" placeholder="Nombre"/>
+            <input type="text" placeholder="Apellido"/>
+            <input type="email" placeholder="Email"/>
+            <input type="password" placeholder="Contraseña"/>
+            <input type="password" placeholder="Repita Contraseña"/>
+          </div>
+          <div class="ingresar">
+            <button>Registrarme</button>
+            <input type="checkbox" /><label class="txt-peque">Acepto Terminos y condiciones</label>
+          </div>
+        </form>
+      </section>
     </main>
     <footer>
       <p>All rights reserved 2023 - Funkoshop &copy;</p>
