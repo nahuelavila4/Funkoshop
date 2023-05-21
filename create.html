@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="stylesheet" href="./stylesheet/ajustes.css" />
+    <link rel="stylesheet" href="./stylesheet/ajustes-admin.css" />
+
     <link rel="stylesheet" href="./stylesheet/create.css" />
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -44,12 +46,20 @@
         <h2>Crear Nuevo Item</h2>
         <div class="row">
           <div class="column">
-            <label for="">Categoria</label>
-            <input type="text" class="form-input" />
+            <select name="" id="">
+              <option selected disable>Categoria</option>
+              <option value="">Figura</option>
+              <option value="">Posters</option>
+              <option value="">Pines</option>
+            </select>
           </div>
-          <div class="column">
-            <label for="">Licencia</label>
-            <input type="text" class="form-input" />
+          <div class="column licencia">
+            <select name="" id="">
+              <option selected disable>Licencia</option>
+              <option value="">Harry Potter</option>
+              <option value="">Star Wars</option>
+              <option value="">Pokemon</option>
+            </select>
           </div>
         </div>
         <div class="row">
@@ -73,7 +83,7 @@
             <label for="">SKU</label>
             <input type="text" placeholder="SSK111AB001" class="form-input" />
           </div>
-          <div class="column">
+          <div class="column precio-desc">
             <label for="">Precio</label>
             <input type="number" placeholder="$ 0.000,00" class="form-input" />
           </div>
@@ -87,10 +97,14 @@
             <label for="">Descuento: </label>
             <input type="number" name="" id="" class="form-input" />
           </div>
-          <div class="column">
-            <label for="">Cuotas: </label>
-            <input type="number" name="" id="" class="form-input" />
-          </div>
+        </div>
+        <div class="row">
+          <select name="" id="">
+            <option selected disable>Cuotas</option>
+            <option value="">3 cuotas sin interes</option>
+            <option value="">6 cuotas sin interes</option>
+            <option value="">12 cuotas sin interes</option>
+          </select>
         </div>
         <div class="row precio">
           <label>Imagenes:</label>

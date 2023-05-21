@@ -23,13 +23,19 @@ section{
     font-size: 1.6em;
 }
 
-.ingresar button, .txt-peque{
+.ingresar .registrarse, .txt-peque{
     font-size: var(--font-nuevo);
 }
-.ingresar button{
+.registrarse{
+    color: aliceblue;
     margin-right: 1em;
     width: 100px;
     height: 40px;
     background-color: #2ec5ce;
+    border: none;
+    border-radius: .6em;
+}
+.check-terminos{
+    margin-right: .1em;
 }
 

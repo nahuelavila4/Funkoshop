@@ -1,32 +1,72 @@
-th, td{
-    padding: 1em 0;
-}
-/* 
-main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+body {
+  align-items: center;
 }
 
-.busqueda{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+h2 {
+  margin: 0.1em 0 0.2em 0;
+}
+table {
+  width: 100%;
+  max-width: 600px;
+  font-size: var(--font-nuevo);
+  font-weight: var(--weight-lead);
+}
+table td,
+th {
+  padding: 0.6em 1em;
+}
+td i:first-child {
+  margin-right: 0.5em;
 }
 
-.lista .titulo{
-    display: flex;
-    justify-content: space-between;
+table tbody tr:nth-of-type(odd) {
+  background-color: rgb(227, 229, 232);
 }
- */
- th{
-    text-align: left;
- }
-table{
+.busqueda {
+  width: 100%;
+}
+.nombre-producto {
+  font-size: 1.6em;
+  padding: 0 0.4em;
+  outline: none;
+  border: none;
+  border-bottom: solid 1px #2ec5ce;
+}
+
+.btn-principal {
+  margin-bottom: 0.5em;
+  padding: 0.4em 1em;
+  color: aliceblue;
+  font-size: var(--font-nuevo);
+  background-color: #2ec5ce;
+  border: none;
+  border-radius: 0.6em;
+}
+@media screen and (max-width: 600px) {
+  main {
+    margin: 2em 0;
+  }
+  table {
     width: 100%;
-    border-collapse: collapse;
-}
-table tbody tr:nth-of-type(odd){
-    background-color: rgb(227, 229, 232);
+  }
+  thead {
+    display: none;
+  }
+  tr:nth-of-type(2n) {
+    background-color: inherit;
+  }
+  tr td:first-child {
+    background: #f0f0f0;
+    font-weight: bold;
+    font-size: 1.3em;
+  }
+  tbody td {
+    display: block;
+    text-align: center;
+  }
+  tbody td:before {
+    content: attr(data-th);
+    display: block;
+    text-align: center;
+  }
 }
