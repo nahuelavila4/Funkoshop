@@ -13,8 +13,9 @@ main {
 /* -----------------------filtros------------------ */
 
 main .filtros {
-  padding: 1.5em 0;
-  background-color: #fe9a22;
+  /* padding: 1.5em 0; */
+  color: aliceblue;
+  background-color: #8c30f5;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -25,8 +26,9 @@ main .filtros {
   overflow: hidden;
 }
 .filtros a {
+  color: aliceblue;
   font-size: var(--font-lead);
-  font-weight: var(--weight-llabel);
+  font-weight: 700;
   cursor: pointer;
 }
 .filtros div li {
@@ -41,12 +43,12 @@ main .filtros {
   padding: 0.6em 0.8em;
   max-width: 10em;
   border: none;
-  border-radius: 0.8em;
+  border-radius: 0.6em;
   outline: none;
 }
-.filtros .filtrosmenu{
+.filtros .filtrosmenu {
   margin-top: 1.2em;
-  transition: height .3s;
+  transition: height 0.3s;
   height: 0;
 }
 .filtros .filtrosmenu > * {
@@ -64,10 +66,12 @@ main .productos .productos-grid {
   row-gap: 2em;
 }
 .productos-grid article {
-  padding: 1.5em 2em;
-  background-color: #ffc2786b;
-  border-radius: 0.8em;
+  background-color: #f1e9fa;
+  border-radius: 0.6em;
   align-items: center;
+}
+.productos-grid article .info {
+  padding: 1.5em 2em;
 }
 .productos-grid article .cont-img {
   display: flex;
@@ -90,9 +94,10 @@ main .productos .productos-grid {
   }
   main .filtros {
     /* max-height: 60em; */
+    padding: 1.5em 0 1em 0;
     height: fit-content;
     margin-left: 2em;
-    border-radius: 0.8em;
+    border-radius: 0.6em;
   }
   main .productos .productos-grid {
     margin-top: 0;

@@ -6,17 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./stylesheet/ajustes.css" />
     <link rel="stylesheet" href="./stylesheet/item.css" />
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <!--  -->
+    <!-- Glide.js -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/@glidejs/glide" />
+    <!--  -->
     <script
       src="https://kit.fontawesome.com/5b00e0e4a8.js"
       crossorigin="anonymous"
     ></script>
-    <title>Item First Mobile</title>
+    <title>Item</title>
   </head>
   <body>
     <header>
@@ -32,16 +45,10 @@
           </div>
           <div class="nav-items">
             <li>
-              <a><p>Login</p></a>
+              <a href="login.html"><p>Login</p></a>
             </li>
             <li>
               <a href="shop.html"><p>Shop</p></a>
-            </li>
-            <li>
-              <a><p>Nosotros</p></a>
-            </li>
-            <li>
-              <a><p>Contacto</p></a>
             </li>
             <li>
               <button>Comprar</button>
@@ -55,15 +62,21 @@
         <article>
           <img src="./img/star-wars/luke-1.webp" alt="" />
           <div class="info">
-            <span>Star Wars</span>
-            <h3>Luke Skywalker</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi,
-              cumque?
-            </p>
+            <div class="detalle">
+              <span>Star Wars</span>
+              <h3>Luke Skywalker</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi,
+                cumque?
+              </p>
+            </div>
             <div class="cant">
               <p>$ 1899,99</p>
-              <input type="number" placeholder="Ingresar cantidad" />
+              <div class="incrementador">
+                <span class="btn-menos">-</span>
+                <span class="btn-num">01</span>
+                <span class="btn-mas">+</span>
+              </div>
             </div>
             <button>Agregar al carrito</button>
           </div>
@@ -71,48 +84,53 @@
       </section>
       <section class="relacionados">
         <h2>Productos relacionados</h2>
-        <div class="relacionados-fila">
-          <article>
-            <div class="cont-img">
-              <img src="./img/harry-potter/harry-1.webp" alt="" />
-              <span>NUEVO</span>
+        <div class="glide">
+          <div class="glide__track" data-glide-el="track">
+            <div class="relacionados-fila glide__slides">
+              <article class="glide__slide">
+                <div class="cont-img">
+                  <img src="./img/harry-potter/harry-1.webp" alt="" />
+                  <span>NUEVO</span>
+                </div>
+                <div class="info">
+                  <div></div>
+                  <h4>Harry Potter</h4>
+                  <p>$ 1899,99</p>
+                  <p>3 cuotas sin interes</p>
+                </div>
+              </article>
+              <article class="glide__slide">
+                <div class="cont-img">
+                  <img src="./img/star-wars/trooper-1.webp" alt="" />
+                  <span>NUEVO</span>
+                </div>
+                <div class="info">
+                  <h4>Stormtropper</h4>
+                  <p>$ 1899,99</p>
+                  <p>3 cuotas sin interes</p>
+                </div>
+              </article>
+              <article class="glide__slide">
+                <div class="cont-img">
+                  <img src="./img/pokemon/charmander-1.webp" alt="" />
+                  <span>NUEVO</span>
+                </div>
+                <div class="info">
+                  <h4>Charmander</h4>
+                  <p>$ 1899,99</p>
+                  <p>3 cuotas sin interes</p>
+                </div>
+              </article>
             </div>
-            <div class="info">
-              <div></div>
-              <h4>Harry Potter</h4>
-              <p>$ 1899,99</p>
-              <p>3 cuotas sin interes</p>
-            </div>
-          </article>
-          <article>
-            <div class="cont-img">
-              <img src="./img/star-wars/trooper-1.webp" alt="" />
-              <span>NUEVO</span>
-            </div>
-            <div class="info">
-              <h4>Stormtropper</h4>
-              <p>$ 1899,99</p>
-              <p>3 cuotas sin interes</p>
-            </div>
-          </article>
-          <article>
-            <div class="cont-img">
-              <img src="./img/pokemon/charmander-1.webp" alt="" />
-              <span>NUEVO</span>
-            </div>
-            <div class="info">
-              <h4>Charmander</h4>
-              <p>$ 1899,99</p>
-              <p>3 cuotas sin interes</p>
-            </div>
-          </article>
+          </div>
         </div>
       </section>
     </main>
     <footer>
       <p>All rights reserved 2023 - Funkoshop &copy;</p>
     </footer>
-    <script src="./menu.js"></script>
-
+    <script src="./function/menu.js"></script>
+    <script src="./function/slider.js"></script>
+    <script src="function/incrementador.js"></script>
   </body>
 </html>

@@ -43,7 +43,7 @@ main .lanzamientos .lanzamientos-cont {
   margin: 8em 0;
 }
 main .lanzamientos .grid-layout {
-  margin: 0 1.4em;
+  margin: 0 2em;
   display: grid;
   grid-template-columns: minmax(0, 400px);
   justify-content: center;
